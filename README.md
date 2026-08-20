@@ -9,7 +9,7 @@
 ![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)
 ![Status](https://img.shields.io/badge/status-conclu%C3%ADdo-brightgreen?style=for-the-badge)
 
-> Segundo projeto de uma série usando o Data Warehouse **AdventureWorks**: dessa vez, um painel executivo completo — visão geral do negócio e recorte por perfil de cliente — construído em **Power BI**, com modelagem via T-SQL e medidas DAX. Veja também: [Dashboard AdventureWorks em Excel](../adventureworks-sql-excel-dashboard) (mesma fonte de dados, abordagem em Excel + Power Query).
+> Segundo projeto de uma série usando o Data Warehouse **AdventureWorks**: dessa vez, um painel executivo completo — visão geral do negócio e recorte por perfil de cliente — construído em **Power BI**, com modelagem via T-SQL e medidas DAX. Veja também: [Dashboard AdventureWorks em Excel](../adventureworks-sqlintegracao-excel) (mesma fonte de dados, abordagem em Excel + Power Query).
 
 🔗 **[Ver Dashboard Publicado](#)** *(adicione aqui o link do Power BI Service, se publicar)*
 
