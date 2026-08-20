@@ -140,10 +140,10 @@ adventureworks-powerbi-dashboard/
 
 ## 💡 Principais Insights
 
-- A receita total do canal Internet no período 2010-2014 foi de **29,35 milhões**, com margem de lucro média de **41,15%**.
-- O mês de **Dezembro** concentrou o maior volume de vendas, indicando **possível sazonalidade**.
-- Os **Estados Unidos** lideram em lucro absoluto e volume.
-- O perfil de cliente **Masculino** representa a maior fatia das vendas, mas a diferença entre gêneros é **pequena**.
+- A receita total do canal Internet no período 2010-2014 foi de **29,35 milhões**, com margem de lucro média de **41,15%**
+- O mês de **Dezembro** concentrou o maior volume de vendas, indicando **possível sazonalidade**
+- Os **Estados Unidos** lideram em lucro absoluto e volume
+- O perfil de cliente **Masculino** representa a maior fatia das vendas, mas a diferença entre gêneros é **pequena**
 
 ---
 
