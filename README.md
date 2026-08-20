@@ -1,6 +1,6 @@
 # 📊 Visão Global de Vendas Online: Dashboard Executivo em Power BI
 
-*Análise 360° da performance de vendas do canal Internet (AdventureWorks) com SQL Server + Power BI*
+*Análise global da performance de vendas do canal Internet (AdventureWorks) com SQL Server + Power BI*
 
 ![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=microsoftpowerbi&logoColor=black)
 ![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
@@ -9,9 +9,9 @@
 ![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)
 ![Status](https://img.shields.io/badge/status-conclu%C3%ADdo-brightgreen?style=for-the-badge)
 
-> Segundo projeto de uma série usando o Data Warehouse **AdventureWorks**: dessa vez, um painel executivo completo — visão geral do negócio e recorte por perfil de cliente — construído em **Power BI**, com modelagem via T-SQL e medidas DAX. Veja também: [Dashboard AdventureWorks em Excel](https://github.com/otaviofabbro/adventureworks-sql-integracao-excel) (mesma fonte de dados, abordagem em Excel + Power Query).
+> Segundo projeto de uma série usando o Data Warehouse **AdventureWorks**: dessa vez, um painel executivo completo — visão geral do negócio e recorte por perfil de cliente — construído em **Power BI**, com modelagem via T-SQL. Veja também: [Dashboard AdventureWorks em Excel](https://github.com/otaviofabbro/adventureworks-sql-integracao-excel) (mesma fonte de dados, abordagem em Excel + Power Query).
 
-🔗 **[Ver Dashboard Publicado](#)** *(adicione aqui o link do Power BI Service, se publicar)*
+🔗 [Ver Dashboard Publicado](https://app.powerbi.com/view?r=eyJrIjoiNzQ1MDFiMmEtNmE0MS00NDU1LTk2YjktYzRiYmEzMTU0YzBjIiwidCI6IjdlOTNlMjg2LWIyOWEtNDQ1NC1hNDFhLWU4NDE5ZWM5ZGViNSJ9&pageName=daccba536aaf8958b994)
 
 ---
 
@@ -36,7 +36,7 @@ O fluxo do projeto segue a pipeline:
 
 **SQL Server (modelagem)** → **T-SQL (VIEW consolidada)** → **Power BI (conexão + medidas DAX)** → **Dashboard (2 páginas interativas)**
 
-Diferente do projeto irmão em Excel — focado em 4 KPIs pontuais — aqui o objetivo foi construir um **painel de gestão mais abrangente**, com granularidade de pedido (`RESULTADOS_ADW`) servindo de base para agregações calculadas diretamente no Power BI.
+Diferente do projeto irmão em Excel — focado em 4 KPIs pontuais — aqui o objetivo foi construir um **painel de gestão mais abrangente**, com granularidade de pedido (`RESULTADOS_ADW`) e analisando o período 2010-2014.
 
 ### 🎯 Objetivo
 
@@ -78,9 +78,11 @@ Todos os indicadores partem da VIEW [`RESULTADOS_ADW`](./sql), que consolida ped
 
 ## 🖼️ Preview do Dashboard
 
-> Substitua a imagem abaixo por um print real do seu dashboard finalizado.
+![Preview do Dashboard](./docs/images/prints-dashboard/print_capa.png)
 
-![Preview do Dashboard](./docs/images/dashboard-overview.png)
+![Preview do Dashboard](./docs/images/prints-dashboard/print_geral.png)
+
+![Preview do Dashboard](./docs/images/prints-dashboard/print_clientes.png)
 
 ---
 
@@ -100,10 +102,14 @@ Todos os indicadores partem da VIEW [`RESULTADOS_ADW`](./sql), que consolida ped
 adventureworks-powerbi-dashboard/
 ├── docs/
 │    ├── images/
-│    │     ├── capa.png
-│    │     ├── clientes.png
-│    │     └── geral.png
-│    │
+│    │     ├── layout-powerpoint/
+│    │     │          ├── capa.png
+│    │     │          ├── clientes.png
+│    │     │          └── geral.png
+│    │     └── prints-dashboard
+│    │                ├── print_capa.png
+│    │                ├── print_clientes.png
+│    │                └── print_geral.png
 │    └── ppt/
 │         └── planos_de_fundo_dashboard.pptx
 │
@@ -135,12 +141,10 @@ adventureworks-powerbi-dashboard/
 
 ## 💡 Principais Insights
 
-> Substitua pelos achados reais do seu dashboard.
-
-- A receita total do canal Internet em 2013 foi de **[valor]**, com margem de lucro média de **[X]%**.
-- O mês de **[mês]** concentrou o maior volume de vendas, indicando **[possível causa/sazonalidade]**.
-- O país **[Y]** lidera em lucro absoluto, mesmo não sendo o de maior volume — sinal de **[maior margem/menor custo logístico/etc.]**.
-- O perfil de cliente **[M/F]** representa a maior fatia das vendas, mas a diferença entre gêneros é **[pequena/relevante]**.
+- A receita total do canal Internet no período 2010-2014 foi de **29,35 milhões**, com margem de lucro média de **41,15%**.
+- O mês de **Dezembro** concentrou o maior volume de vendas, indicando **possível sazonalidade**.
+- Os **Estados Unidos** lideram em lucro absoluto e volume.
+- O perfil de cliente **Masculino** representa a maior fatia das vendas, mas a diferença entre gêneros é **pequena**.
 
 ---
 
