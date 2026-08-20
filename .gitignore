@@ -1,0 +1,46 @@
+# =========================================================================
+# POWER BI SECTION
+# =========================================================================
+# Ignore local user settings and UI layouts
+**/localSettings.json
+**/editorSettings.json
+
+# Ignore the heavy local data model cache (contains the imported data)
+**/cache.abf
+
+# Ignore temporary preview files
+*.pbi/
+
+
+# =========================================================================
+# SQL SERVER SECTION
+# =========================================================================
+# Ignore SQL Server database files (never commit actual database binaries)
+*.mdf
+*.ldf
+*.ndf
+
+# Ignore SSDT / Visual Studio user-specific settings
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vs/
+
+# Ignore SQL Server Business Intelligence (SSIS/SSAS/SSRS) data/temporary caches
+*.rdl.data
+*.bim.layout
+*.bim_*.settings
+*.rptproj.rsuser
+*- [Bb]ackup.rdl
+*.ispac
+
+# =========================================================================
+# GENERAL COMPLIANCE (Visual Studio / Build outputs)
+# =========================================================================
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+*.log
+*.tmp
