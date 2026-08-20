@@ -91,7 +91,6 @@ Todos os indicadores partem da VIEW [`RESULTADOS_ADW`](./sql), que consolida ped
 - **SQL Server** — armazenamento e modelagem dos dados (AdventureWorks)
 - **T-SQL** — criação da VIEW consolidada `RESULTADOS_ADW`
 - **Power BI Desktop** — modelagem do relatório e construção do dashboard
-- **DAX** — medidas de agregação e cálculo de indicadores (receita, lucro, margem)
 - **Git & GitHub** — versionamento e portfólio
 
 ---
