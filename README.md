@@ -11,7 +11,7 @@
 
 > Segundo projeto de uma série usando o Data Warehouse **AdventureWorks**: dessa vez, um painel executivo completo — visão geral do negócio e recorte por perfil de cliente — construído em **Power BI**, com modelagem via T-SQL e medidas DAX. Veja também: [Dashboard AdventureWorks em Excel](https://github.com/otaviofabbro/adventureworks-sql-integracao-excel) (mesma fonte de dados, abordagem em Excel + Power Query).
 
-🔗 **[Ver Dashboard Publicado](#)** *(adicione aqui o link do Power BI Service, se publicar)*
+🔗 [Ver Dashboard Publicado](https://app.powerbi.com/view?r=eyJrIjoiNzQ1MDFiMmEtNmE0MS00NDU1LTk2YjktYzRiYmEzMTU0YzBjIiwidCI6IjdlOTNlMjg2LWIyOWEtNDQ1NC1hNDFhLWU4NDE5ZWM5ZGViNSJ9&pageName=daccba536aaf8958b994)
 
 ---
 
@@ -78,9 +78,11 @@ Todos os indicadores partem da VIEW [`RESULTADOS_ADW`](./sql), que consolida ped
 
 ## 🖼️ Preview do Dashboard
 
-> Substitua a imagem abaixo por um print real do seu dashboard finalizado.
+![Preview do Dashboard](./docs/images/prints-dashboard/print_capa.png)
 
-![Preview do Dashboard](./docs/images/dashboard-overview.png)
+![Preview do Dashboard](./docs/images/prints-dashboard/print_geral.png)
+
+![Preview do Dashboard](./docs/images/prints-dashboard/print_clientes.png)
 
 ---
 
@@ -100,10 +102,14 @@ Todos os indicadores partem da VIEW [`RESULTADOS_ADW`](./sql), que consolida ped
 adventureworks-powerbi-dashboard/
 ├── docs/
 │    ├── images/
-│    │     ├── capa.png
-│    │     ├── clientes.png
-│    │     └── geral.png
-│    │
+│    │     ├── layout-powerpoint/
+│    │     │          ├── capa.png
+│    │     │          ├── clientes.png
+│    │     │          └── geral.png
+│    │     └── prints-dashboard
+│    │                ├── print_capa.png
+│    │                ├── print_clientes.png
+│    │                └── print_geral.png
 │    └── ppt/
 │         └── planos_de_fundo_dashboard.pptx
 │
